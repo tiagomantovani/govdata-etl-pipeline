@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.pylint.d/
+
+# Ambiente virtual
+venv/
+.venv/
+
+# Dados (parquets/jsons são gerados pelo pipeline e não devem ir para o repo)
+data/*
+!data/.gitkeep
+
+# Segredos
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Airflow runtime
+airflow/logs/
+airflow/plugins/
+airflow/webserver_config.py
+
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+
+# SO
+Thumbs.db
+.DS_Store
+
+# Power BI (arquivos binários do relatório)
+powerbi/*.pbix
+powerbi/*.pbir

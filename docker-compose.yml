@@ -1,0 +1,70 @@
+x-airflow-common: &airflow-common
+  build: .
+  #image: apache/airflow:2.8.0
+  environment:
+    &airflow-common-env
+    JAVA_HOME: /usr/lib/jvm/default-java
+    #JAVA_HOME: /usr/lib/jvm/java-11-openjdk-amd64
+    AIRFLOW__WEBSERVER__WEB_SERVER_MASTER_TIMEOUT: 1200
+    AIRFLOW__CORE__LAZY_LOAD_PLUGINS: 'True'
+    AIRFLOW__CORE__EXECUTOR: LocalExecutor
+    AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://postgres:suasenha@postgres:5432/airflow
+    AIRFLOW__CORE__FERNET_KEY: ''
+    AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
+    AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+    #_PIP_ADDITIONAL_REQUIREMENTS: "requests pandas psycopg2-binary pyspark==3.5.0"
+    AIRFLOW_USER_HOME_DIR: /home/airflow
+    #_AIRFLOW_COMMON_APT_DEPS: "default-jre"
+
+  volumes:
+    - ./airflow/dags:/opt/airflow/dags
+    - ./airflow/plugins:/opt/airflow/plugins
+    - ./airflow/logs:/opt/airflow/logs
+    - ./src:/opt/airflow/src
+    - ./data:/opt/airflow/data
+  user: "${AIRFLOW_UID:-50000}:0"
+  depends_on:
+    postgres:
+      condition: service_healthy
+
+services:
+  postgres:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: suasenha
+      POSTGRES_DB: airflow
+    volumes:
+      - D:\Docker\PostgresData:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  airflow-webserver:
+    <<: *airflow-common
+    command: webserver
+    ports:
+      - "8080:8080"
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:8080/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  airflow-scheduler:
+    <<: *airflow-common
+    command: scheduler
+
+  airflow-init:
+    <<: *airflow-common
+    command: version
+    environment:
+      <<: *airflow-common-env
+      _AIRFLOW_DB_UPGRADE: 'true'
+      _AIRFLOW_WWW_USER_CREATE: 'true'
+      _AIRFLOW_WWW_USER_USERNAME: airflow
+      _AIRFLOW_WWW_USER_PASSWORD: airflow
