@@ -1,5 +1,7 @@
 # GovData ETL Pipeline
 
+![CI](https://github.com/tiagomantovani/govdata-etl-pipeline/actions/workflows/ci.yml/badge.svg)
+
 Pipeline ETL **end-to-end** com dados públicos brasileiros: IBGE (estados, população e PIB) e INEP (IDEB por município). Extração → PySpark → Parquet → PostgreSQL → orquestração com Airflow → visualização com Power BI.
 
 > Projeto de portfólio com arquitetura de data engineering em produção: camadas separadas, schema no modelo dimensional (estrela), recuperação automática de falhas na orquestração e CI.
