@@ -158,6 +158,12 @@ Camada semântica em `sql/views.sql` + modelo em `powerbi/` e prévias geradas d
 
 Para reproduzir o `.pbix`, siga `powerbi/README.md` (conexão PostgreSQL `localhost:5432`/`govdata`), importe as medidas de `MEASURES.dax` e o layout de `REPORT_SPEC.md`.
 
+## Documentação e exploração
+
+- `docs/ARCHITECTURE.md` — decisões e fluxo entre camadas
+- `docs/DATA_DICTIONARY.md` — dicionário das tabelas e views
+- `notebooks/01_exploracao.ipynb` — EDA interativa (PostgreSQL ou Parquet como fallback)
+
 ## Roteiro
 
 - [x] Extração IBGE + INEP
@@ -166,4 +172,4 @@ Para reproduzir o `.pbix`, siga `powerbi/README.md` (conexão PostgreSQL `localh
 - [x] Orquestração Airflow (DAG completa, retries automáticos)
 - [x] Testes + CI
 - [x] Dashboard Power BI (views, modelo, medidas DAX e prévias)
-- [ ] Documentação em `docs/` e notebooks de exploração
+- [x] Documentação e notebook de exploração
