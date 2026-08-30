@@ -31,4 +31,6 @@ jobs:
           pip install -r requirements.txt
 
       - name: Rodar testes
+        env:
+          PYTHONPATH: .
         run: pytest -v --maxfail=1 -ra
