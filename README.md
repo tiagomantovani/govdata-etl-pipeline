@@ -149,6 +149,15 @@ pytest -v
 **Docker: "server closed the connection" no `localhost:5432`**
 - Port-forward do Docker Desktop pode ficar instável; o dado continua íntegro dentro da rede docker. Verifique com `docker compose exec airflow-webserver python -c "..."` ou `docker compose restart postgres`.
 
+## Dashboard Power BI
+
+Camada semântica em `sql/views.sql` + modelo em `powerbi/` e prévias geradas direto do PostgreSQL:
+
+![IDEB médio por região](powerbi/preview_ideb_linhas.png)
+![PIB por UF](powerbi/preview_pib_uf.png)
+
+Para reproduzir o `.pbix`, siga `powerbi/README.md` (conexão PostgreSQL `localhost:5432`/`govdata`), importe as medidas de `MEASURES.dax` e o layout de `REPORT_SPEC.md`.
+
 ## Roteiro
 
 - [x] Extração IBGE + INEP
@@ -156,5 +165,5 @@ pytest -v
 - [x] Carga PostgreSQL (star schema)
 - [x] Orquestração Airflow (DAG completa, retries automáticos)
 - [x] Testes + CI
-- [ ] Dashboard Power BI
+- [x] Dashboard Power BI (views, modelo, medidas DAX e prévias)
 - [ ] Documentação em `docs/` e notebooks de exploração

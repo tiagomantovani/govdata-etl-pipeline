@@ -1,0 +1,25 @@
+// powerbi/MEASURES.dax
+// Medidas DAX para o modelo estrela. Crie-as na tabela correspondente.
+
+-- dim_estado
+Qtd Estados = DISTINCTCOUNT(dim_estado[id_estado])
+
+-- fato_populacao
+Populacao Total = SUM(fato_populacao[populacao])
+Populacao Media UF = AVERAGE(fato_populacao[populacao])
+
+-- fato_pib  (valor em Mil Reais, conforme SIDRA)
+PIB Total (R$ mil) = SUM(fato_pib[valor])
+PIB Medio UF = AVERAGE(fato_pib[valor])
+
+-- fato_ideb
+IDEB Medio = AVERAGE(fato_ideb[ideb])
+IDEB Mediana = MEDIAN(fato_ideb[ideb])
+Municipios Avaliados = COUNTROWS(fato_ideb)
+Municipios Com IDEB = CALCULATE(COUNTROWS(fato_ideb), NOT(ISBLANK(fato_ideb[ideb])))
+Municipios Sem IDEB = [Municipios Avaliados] - [Municipios Com IDEB]
+% Sem IDEB = DIVIDE([Municipios Sem IDEB], [Municipios Avaliados])
+
+-- vw_painel_uf_ano (ou medidas equivalentes sobre os fatos)
+PIB per Capita (R$) = DIVIDE([PIB Total (R$ mil)] * 1000, [Populacao Total])
+IDEB Medio Nacional = CALCULATE(AVERAGE(fato_ideb[ideb]), fato_ideb[rede] = "Pública")
