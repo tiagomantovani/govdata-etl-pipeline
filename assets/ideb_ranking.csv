@@ -1,0 +1,101 @@
+codigo_municipio,nome_municipio,uf,nome_regiao,rede,ano,ideb,posicao
+2304251,Cruz,CE,Nordeste,Pública,2025,10.0,1
+2702306,Coruripe,AL,Nordeste,Pública,2025,10.0,1
+2304004,Coreaú,CE,Nordeste,Pública,2025,10.0,1
+2310506,Pedra Branca,CE,Nordeste,Pública,2025,10.0,1
+2310951,Pires Ferreira,CE,Nordeste,Pública,2025,10.0,1
+2708105,Santana do Mundaú,AL,Nordeste,Pública,2025,10.0,1
+2303659,Catunda,CE,Nordeste,Pública,2025,10.0,1
+2709301,União dos Palmares,AL,Nordeste,Pública,2025,10.0,1
+2309201,Nova Olinda,CE,Nordeste,Pública,2025,9.9,9
+2304269,Deputado Irapuan Pinheiro,CE,Nordeste,Pública,2025,9.9,9
+2305654,Ipaporanga,CE,Nordeste,Pública,2025,9.9,9
+2305605,Independência,CE,Nordeste,Pública,2025,9.8,12
+2300507,Alcântaras,CE,Nordeste,Pública,2025,9.8,12
+2301257,Ararendá,CE,Nordeste,Pública,2025,9.8,12
+2703007,Ibateguara,AL,Nordeste,Pública,2025,9.8,12
+2310902,Piquet Carneiro,CE,Nordeste,Pública,2025,9.8,12
+2300606,Altaneira,CE,Nordeste,Pública,2025,9.8,12
+2308351,Milhã,CE,Nordeste,Pública,2025,9.7,18
+5213905,Mossâmedes,GO,Centro-Oeste,Pública,2025,9.7,18
+2708303,São José da Laje,AL,Nordeste,Pública,2025,9.7,18
+2701100,Branquinha,AL,Nordeste,Pública,2025,9.7,18
+2309300,Nova Russas,CE,Nordeste,Pública,2025,9.7,18
+2309409,Novo Oriente,CE,Nordeste,Pública,2025,9.6,23
+2312908,Sobral,CE,Nordeste,Pública,2025,9.6,23
+2303105,Cariré,CE,Nordeste,Pública,2025,9.6,23
+2308500,Mombaça,CE,Nordeste,Pública,2025,9.6,23
+2304236,Croatá,CE,Nordeste,Pública,2025,9.5,27
+2307254,Jijoca de Jericoacoara,CE,Nordeste,Pública,2025,9.5,27
+2702108,Colônia Leopoldina,AL,Nordeste,Pública,2025,9.4,29
+2308005,Massapê,CE,Nordeste,Pública,2025,9.3,30
+2309003,Mucambo,CE,Nordeste,Pública,2025,9.3,30
+2313203,Tamboril,CE,Nordeste,Pública,2025,9.3,30
+2701407,Campo Alegre,AL,Nordeste,Pública,2025,9.2,33
+2705507,Murici,AL,Nordeste,Pública,2025,9.2,33
+2312700,Senador Pompeu,CE,Nordeste,Pública,2025,9.1,35
+2703759,Jequiá da Praia,AL,Nordeste,Pública,2025,9.1,35
+3547007,Santa Maria da Serra,SP,Sudeste,Pública,2025,9.1,35
+4126355,Serranópolis do Iguaçu,PR,Sul,Pública,2025,9.1,35
+2312809,Senador Sá,CE,Nordeste,Pública,2025,9.1,35
+2304350,Forquilha,CE,Nordeste,Pública,2025,9.1,35
+2203420,Domingos Mourão,PI,Nordeste,Pública,2025,9.0,41
+3171105,Veríssimo,MG,Sudeste,Pública,2025,8.9,42
+3515905,Floreal,SP,Sudeste,Pública,2025,8.8,43
+2204303,Fronteiras,PI,Nordeste,Pública,2025,8.8,43
+2702009,Coité do Nóia,AL,Nordeste,Pública,2025,8.7,45
+2709152,Teotônio Vilela,AL,Nordeste,Pública,2025,8.7,45
+2308203,Meruoca,CE,Nordeste,Pública,2025,8.7,45
+5203939,Buriti de Goiás,GO,Centro-Oeste,Pública,2025,8.7,45
+2300200,Acaraú,CE,Nordeste,Pública,2025,8.7,45
+2308609,Monsenhor Tabosa,CE,Nordeste,Pública,2025,8.7,45
+2304905,Groaíras,CE,Nordeste,Pública,2025,8.7,45
+3515608,Fernando Prestes,SP,Sudeste,Pública,2025,8.7,45
+2313609,Ubajara,CE,Nordeste,Pública,2025,8.7,45
+2916856,Itatim,BA,Nordeste,Pública,2025,8.6,54
+3156502,Rubelita,MG,Sudeste,Pública,2025,8.6,54
+4115853,Mercedes,PR,Sul,Pública,2025,8.6,54
+4125555,São Manoel do Paraná,PR,Sul,Pública,2025,8.6,54
+4112207,Janiópolis,PR,Sul,Pública,2025,8.5,58
+2512507,Queimadas,PB,Nordeste,Pública,2025,8.5,58
+2305001,Guaraciaba do Norte,CE,Nordeste,Pública,2025,8.5,58
+4102208,Atalaia,PR,Sul,Pública,2025,8.5,58
+5216452,Perolândia,GO,Centro-Oeste,Pública,2025,8.5,58
+2503100,Cabaceiras,PB,Nordeste,Pública,2025,8.5,58
+2704005,Junqueiro,AL,Nordeste,Pública,2025,8.5,58
+2303402,Carnaubal,CE,Nordeste,Pública,2025,8.4,65
+3153806,Queluzito,MG,Sudeste,Pública,2025,8.4,65
+4108106,Flórida,PR,Sul,Pública,2025,8.4,65
+4116059,Missal,PR,Sul,Pública,2025,8.4,65
+3514007,Dobrada,SP,Sudeste,Pública,2025,8.4,65
+2605103,Custódia,PE,Nordeste,Pública,2025,8.4,65
+5212253,Lagoa Santa,GO,Centro-Oeste,Pública,2025,8.4,65
+2304103,Crateús,CE,Nordeste,Pública,2025,8.4,65
+3547205,Santana da Ponte Pensa,SP,Sudeste,Pública,2025,8.4,65
+4117297,Novo Itacolomi,PR,Sul,Pública,2025,8.3,74
+4127205,Terra Boa,PR,Sul,Pública,2025,8.3,74
+4112405,Japurá,PR,Sul,Pública,2025,8.3,74
+2313906,Uruoca,CE,Nordeste,Pública,2025,8.3,74
+3532702,Nipoã,SP,Sudeste,Pública,2025,8.3,74
+4307864,Fagundes Varela,RS,Sul,Pública,2025,8.3,74
+5208608,Goianésia,GO,Centro-Oeste,Pública,2025,8.2,80
+3503406,Arealva,SP,Sudeste,Pública,2025,8.2,80
+2306553,Itarema,CE,Nordeste,Pública,2025,8.2,80
+3108107,Bonfim,MG,Sudeste,Pública,2025,8.2,80
+5218706,Rianápolis,GO,Centro-Oeste,Pública,2025,8.2,80
+3104403,Argirita,MG,Sudeste,Pública,2025,8.2,80
+5221007,Taquaral de Goiás,GO,Centro-Oeste,Pública,2025,8.2,80
+3515129,Emilianópolis,SP,Sudeste,Pública,2025,8.2,80
+2304707,Granja,CE,Nordeste,Pública,2025,8.2,80
+2310258,Paraipaba,CE,Nordeste,Pública,2025,8.2,80
+4118402,Paranavaí,PR,Sul,Pública,2025,8.2,80
+2302305,Bela Cruz,CE,Nordeste,Pública,2025,8.2,80
+3534500,Oscar Bressane,SP,Sudeste,Pública,2025,8.2,80
+4316303,Roque Gonzales,RS,Sul,Pública,2025,8.2,80
+5213087,Minaçu,GO,Centro-Oeste,Pública,2025,8.2,80
+5219456,Santa Rita do Novo Destino,GO,Centro-Oeste,Pública,2025,8.2,80
+3200136,Águia Branca,ES,Sudeste,Pública,2025,8.1,96
+3547650,Santa Salete,SP,Sudeste,Pública,2025,8.1,96
+2305902,Ipueiras,CE,Nordeste,Pública,2025,8.1,96
+4107207,Dois Vizinhos,PR,Sul,Pública,2025,8.1,96
+4314472,Pinhal Grande,RS,Sul,Pública,2025,8.1,96

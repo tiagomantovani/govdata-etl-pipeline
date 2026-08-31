@@ -160,6 +160,16 @@ Camada semântica em `sql/views.sql` + modelo em `powerbi/` e prévias geradas d
 
 Para reproduzir o `.pbix`, siga `powerbi/README.md` (conexão PostgreSQL `localhost:5432`/`govdata`), importe as medidas de `MEASURES.dax` e o layout de `REPORT_SPEC.md`.
 
+## Web App (Streamlit Cloud)
+
+App em `streamlit_app.py` — 3 páginas (Dashboard, Explorer, API Docs) com fallback automático: tenta PostgreSQL (`st.secrets["postgres"]` ou `POSTGRES_*` env), senão lê os CSVs de `assets/` (7 MB, commitados).
+
+```bash
+# local
+streamlit run streamlit_app.py
+# deploy grátis: conecte o repo em https://share.streamlit.io → Deploy → adicione secrets postgres se quiser dados ao vivo
+```
+
 ## Documentação e exploração
 
 - `docs/ARCHITECTURE.md` — decisões e fluxo entre camadas

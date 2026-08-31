@@ -1,0 +1,28 @@
+id_estado,uf,nome_uf,nome_regiao,ano,populacao,pib_total,pib_per_capita,ideb_medio
+12,AC,Acre,Norte,2023,,26291321.0,,5.14
+27,AL,Alagoas,Nordeste,2023,,89688932.0,,5.91
+13,AM,Amazonas,Norte,2023,,161794976.0,,4.69
+16,AP,Amapá,Norte,2023,,28020120.0,,4.23
+29,BA,Bahia,Nordeste,2023,,430987853.0,,4.94
+23,CE,Ceará,Nordeste,2023,,232239257.0,,6.77
+53,DF,Distrito Federal,Centro-Oeste,2023,,365669108.0,,5.9
+32,ES,Espírito Santo,Sudeste,2023,,209829732.0,,6.33
+52,GO,Goiás,Centro-Oeste,2023,,336746975.0,,6.27
+21,MA,Maranhão,Nordeste,2023,,149227195.0,,5.01
+31,MG,Minas Gerais,Sudeste,2023,,971977551.0,,6.11
+50,MS,Mato Grosso do Sul,Centro-Oeste,2023,,184402118.0,,5.29
+51,MT,Mato Grosso,Centro-Oeste,2023,,273008586.0,,5.69
+15,PA,Pará,Norte,2023,,254546511.0,,4.65
+25,PB,Paraíba,Nordeste,2023,,96963174.0,,5.34
+26,PE,Pernambuco,Nordeste,2023,,270474919.0,,5.31
+22,PI,Piauí,Nordeste,2023,,80916856.0,,5.42
+41,PR,Paraná,Sul,2023,,670919162.0,,6.55
+33,RJ,Rio de Janeiro,Sudeste,2023,,1172871443.0,,5.5
+24,RN,Rio Grande do Norte,Nordeste,2023,,101740275.0,,4.84
+11,RO,Rondônia,Norte,2023,,76456179.0,,5.41
+14,RR,Roraima,Norte,2023,,25124805.0,,4.65
+43,RS,Rio Grande do Sul,Sul,2023,,650107022.0,,6.3
+42,SC,Santa Catarina,Sul,2023,,513392973.0,,6.3
+28,SE,Sergipe,Nordeste,2023,,60816662.0,,4.65
+35,SP,São Paulo,Sudeste,2023,,3444814033.0,,6.45
+17,TO,Tocantins,Norte,2023,,64317699.0,,4.93
