@@ -128,12 +128,17 @@ class PostgresLoader:
         out[out.isna()] = None
         return out
 
-    def _bulk_insert(self, table, columns, rows):
+    def _bulk_insert(self, table, columns, rows, batch_size=5000):
+        from psycopg2.extras import execute_batch
+
         cursor = self.connection.cursor()
         placeholders = ", ".join(["%s"] * len(columns))
         sql = f"INSERT INTO {table} ({', '.join(columns)}) VALUES ({placeholders})"
-        cursor.executemany(sql, rows)
-        self.connection.commit()
+        for i in range(0, len(rows), batch_size):
+            batch = rows[i:i + batch_size]
+            execute_batch(cursor, sql, batch, page_size=1000)
+            self.connection.commit()
+            print(f"  ... {min(i + batch_size, len(rows))}/{len(rows)} em {table}")
         print(f"✅ {len(rows)} registros inseridos em {table}")
 
     # ---- Cargas ----

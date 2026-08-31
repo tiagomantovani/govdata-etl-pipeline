@@ -87,8 +87,8 @@ class SparkProcessor:
         df_clean = df \
             .withColumn("id_estado", F.col("id").cast(IntegerType())) \
             .withColumn("id_regiao", F.col("regiao.id").cast(IntegerType())) \
-            .withColumn("sigla_regiao", F.col("regiao").getField("sigla")) \
-            .withColumn("nome_regiao", F.col("regiao").getField("nome")) \
+            .withColumn("sigla_regiao", F.col("regiao.sigla")) \
+            .withColumn("nome_regiao", F.col("regiao.nome")) \
             .select("id_estado", "sigla", "nome", "sigla_regiao", "nome_regiao", "id_regiao")
 
         return self._save_parquet(df_clean, "estados_processados")
